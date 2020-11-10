@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>All Saved People</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Phone Number</th>
+          <th>ID Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of people | async">
+          <td>{{person.fullName}}</td>
+          <td>{{person.phoneNumber}}</td>
+          <td>{{person.idNumber}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
